@@ -1,0 +1,38 @@
+<%- include ('partials/header')%>
+
+<script>
+    function abrirOtraPagina() {
+        // Redirige al usuario a "pagina2.html"
+        window.location.href = "/Eventos.ejs";
+    }
+</script>
+
+<div class="container-md">
+    <section class="container">
+      <form action="/auth" method="post" class="form">
+        <div class="input-box">
+          <label>Nombre Completo</label>
+          <input type="text" name="nombre" placeholder="Escribe tu nombre completo" required />
+        </div>
+        <div class="input-box">
+          <label>Correo Electronico</label>
+          <input type="email" name="correo" placeholder="Escribe tu correo electronico" required />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Numero de Telefono</label>
+            <input type="text" name="telefono" placeholder="Escribe tu numero de telefono" required />
+          </div>
+          <div class="input-box">
+            <label>Fecha de nacimiento</label>
+            <input type="text" name="fnacimiento" placeholder="Añade tu fecha de nacimiento" required />
+          </div>
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="submit">Aceptar</button>
+        </div>
+      </form>
+    </section>
+</div>
+
+<%- include ('partials/footer')%>
