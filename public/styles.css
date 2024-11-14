@@ -1,4 +1,17 @@
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* Hace que el contenido ocupe el espacio disponible */
+}
+
 .navbar {
   background-color: #CFF3FF;
   height: 80px;
@@ -352,4 +365,22 @@ b{
   background-color: #E74899;
   border-radius: 5px;
   border-color: #E74899;
+}
+
+p{
+  text-align: justify;
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 15px;
+}
+
+.col1{
+  text-align: justify;
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 15px;
+}
+
+.col2 a{
+  display: block;
 }

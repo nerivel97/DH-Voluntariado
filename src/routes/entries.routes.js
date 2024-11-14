@@ -21,7 +21,7 @@ const {
   renderComprar,
   renderEventos,
   renderRegistro,
-  renderNewEntry,
+  renderAdmin,
   createregistro,
 } = require("../controllers/entries.controller.js");
 
@@ -35,7 +35,7 @@ router.get("/Eventos", renderEventos);
 
 router.get("/registro", renderRegistro);
 
-router.get("/new-entry", renderNewEntry);
+router.get("/admin", renderAdmin);
 
 router.post("/auth", createregistro);
 

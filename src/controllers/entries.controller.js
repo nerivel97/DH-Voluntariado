@@ -33,7 +33,9 @@ const renderRegistro = (req, res) => {
     res.render('registro', { currentPage: 'registro' });
 };
 
-const renderNewEntry = (req, res) => {};
+const renderAdmin = (req, res) => {
+    res.render('admin', { currentPage: 'admin' });
+};
 
 const createNewEntry = (req, res) => {};
 
@@ -63,7 +65,7 @@ const createregistro = (req, res) => {
             }
         
             // Redirigir o mostrar un mensaje de éxito
-            res.redirect("/");
+            res.redirect("/Eventos");
         });
 
 
@@ -81,11 +83,11 @@ const renderRegister = (req, res) => {
 
 module.exports = {
     renderIndex,
-    renderNewEntry,
     createNewEntry,
     renderLogin,
     renderEventos,
     renderRegistro,
+    renderAdmin,
     renderComprar,
     createregistro
 };
